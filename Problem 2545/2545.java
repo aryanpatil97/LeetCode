@@ -1,5 +1,10 @@
 // Solution for LeetCode 2545. Sort the Students by Their Kth Score
 
-public class 2545 {
-    // ...implement your solution here...
+import java.util.Arrays;
+
+class Solution {
+  public int[][] sortTheStudents(int[][] score, int k) {
+    Arrays.sort(score, (a, b) -> Integer.compare(b[k], a[k]));
+    return score;
+  }
 }
