@@ -1,21 +1,20 @@
-// Solution for LeetCode 162. Find Peak Element
-
 class Solution {
     public int findPeakElement(int[] nums) {
-       int peak = 0;
-       int ans = 0;
-       if(nums.length==1){
-        return 0;
-       }
-       for(int i =0;i<nums.length;++i){
-        if(nums[i]>peak){
-            peak = nums[i];
-            ans = i;
+        int left = 0, right = nums.length - 1;
+
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+
+            // If mid element is less than next element, 
+            // then peak must be on the right side
+            if (nums[mid] < nums[mid + 1]) {
+                left = mid + 1;
+            } else {
+                // Otherwise, peak is on the left side (including mid)
+                right = mid;
+            }
         }
-       }
-       if(nums[0]==-2147483648&&nums[1]==-2147483647){
-        return 1;
-       }
-       return ans;
+        // Left and right converge to the peak index
+        return left;
     }
 }
