@@ -1,0 +1,2 @@
+import java.util.*;
+public class Solution { public int minDeletions(String s){ int[] f=new int[26]; for(char c:s.toCharArray()) f[c-'a']++; Set<Integer> used=new HashSet<>(); int res=0; for(int i=0;i<26;i++){ while(f[i]>0 && used.contains(f[i])){ f[i]--; res++; } if(f[i]>0) used.add(f[i]); } return res; } }
