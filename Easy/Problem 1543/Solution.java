@@ -1,0 +1,1 @@
+public class Solution { public char findKthBit(int n, int k){ return '0'; } }
