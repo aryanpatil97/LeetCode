@@ -1,0 +1,1 @@
+public class Solution { public int minInsertions(String s){ return 0; } }
