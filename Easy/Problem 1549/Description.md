@@ -1,0 +1,1 @@
+# 1549. Minimum Interval to Include Each Query (Placeholder)
