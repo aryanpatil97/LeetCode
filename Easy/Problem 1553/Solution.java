@@ -1,0 +1,1 @@
+public class Solution { public int minDays(int n){ return 0; } }
