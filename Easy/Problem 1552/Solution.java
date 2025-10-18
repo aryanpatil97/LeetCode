@@ -1,0 +1,1 @@
+public class Solution { public int placeBalls(int[] nums, int k){ return 0; } }
