@@ -1,0 +1,1 @@
+public class Solution { public String thousandSeparator(int n){ String s=Integer.toString(n); StringBuilder sb=new StringBuilder(); int cnt=0; for(int i=s.length()-1;i>=0;i--){ if(cnt==3){ sb.append('.'); cnt=0; } sb.append(s.charAt(i)); cnt++; } return sb.reverse().toString(); } }
