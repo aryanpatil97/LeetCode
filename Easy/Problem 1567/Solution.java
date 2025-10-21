@@ -1,0 +1,1 @@
+public class Solution { public int getMaxLen(int[] nums){ int pos=0,neg=0,res=0; for(int n:nums){ if(n>0){ pos++; neg=neg>0?neg+1:0; } else if(n<0){ int t=pos; pos=neg>0?neg+1:0; neg=t+1; } else { pos=0; neg=0; } res=Math.max(res,pos); } return res; } }
