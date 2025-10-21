@@ -1,0 +1,1 @@
+# 1566. Number of Ways to Rearrange Sticks (Placeholder)
