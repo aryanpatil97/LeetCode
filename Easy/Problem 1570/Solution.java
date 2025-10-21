@@ -1,0 +1,2 @@
+import java.util.*;
+public class Solution { public int dotProduct(Map<Integer,Integer> a, Map<Integer,Integer> b){ int res=0; for(int k: a.keySet()) if(b.containsKey(k)) res+=a.get(k)*b.get(k); return res; } }
