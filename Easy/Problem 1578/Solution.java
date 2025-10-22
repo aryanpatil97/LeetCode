@@ -1,0 +1,1 @@
+public class Solution { public int minSteps(String s, String t){ int[] a=new int[26]; for(char c:s.toCharArray()) a[c-'a']++; for(char c:t.toCharArray()) a[c-'a']--; int res=0; for(int v:a) if(v>0) res+=v; return res; } }
