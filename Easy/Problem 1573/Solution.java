@@ -1,0 +1,1 @@
+public class Solution { public int numWays(String s){ return 0; } }
