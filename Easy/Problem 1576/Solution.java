@@ -1,0 +1,1 @@
+public class Solution { public String modifyString(String s){ char[] a=s.toCharArray(); for(int i=0;i<a.length;i++){ for(char c='a';c<='z';c++){ if((i>0 && a[i-1]==c) || (i+1<a.length && a[i+1]==c)) continue; if(a[i]=='?'){ a[i]=c; break; } } } return new String(a); } }
