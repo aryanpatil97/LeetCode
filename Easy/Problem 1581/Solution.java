@@ -1,0 +1,1 @@
+public class Solution { public boolean serveCustomer(int[] customers, int capacity){ return false; } }
