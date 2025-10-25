@@ -1,0 +1,1 @@
+public class Solution { public int maxScore(int[] nums){ return 0; } }
