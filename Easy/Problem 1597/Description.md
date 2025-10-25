@@ -1,0 +1,1 @@
+# 1597. Minimum Time to Make Rope Colorful (Placeholder)
