@@ -1,0 +1,1 @@
+public class Solution { public int minOperations(String[] logs){ int up=0; for(String l:logs){ if(l.equals("../")) if(up>0) up--; else if(!l.equals("./")) up++; } return up; } }
