@@ -1,0 +1,2 @@
+import java.util.*;
+public class Solution { public List<String> alertNames(String[] keyName, String[] keyTime){ Map<String,List<Integer>> m=new HashMap<>(); for(int i=0;i<keyName.length;i++){ m.computeIfAbsent(keyName[i],k->new ArrayList<>()).add(Integer.parseInt(keyTime[i].replace(":",""))); } List<String> res=new ArrayList<>(); for(String k:m.keySet()){ List<Integer> times=m.get(k); Collections.sort(times); for(int i=2;i<times.size();i++) if(times.get(i)-times.get(i-2)<=100){ res.add(k); break;} } Collections.sort(res); return res; } }
