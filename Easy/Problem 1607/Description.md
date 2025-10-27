@@ -1,0 +1,1 @@
+# 1607. Maximum Number of Removable Characters (Placeholder)
