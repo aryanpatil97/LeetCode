@@ -1,0 +1,1 @@
+public class Solution { public boolean isOneEditDistance(String s, String t){ int ns=s.length(), nt=t.length(); if(Math.abs(ns-nt)>1) return false; if(ns>nt) return isOneEditDistance(t,s); int i=0; while(i<ns && s.charAt(i)==t.charAt(i)) i++; if(i==ns) return ns+1==nt; int j=0; while(i+j<ns && s.charAt(i+j)==t.charAt(i+j+ (ns<nt?1:0))) j++; return i+j==ns; } }
