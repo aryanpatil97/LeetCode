@@ -1,0 +1,2 @@
+import java.util.*;
+public class Solution { public int maximalNetworkRank(int n,int[][] roads){ int[] deg=new int[n]; boolean[][] conn=new boolean[n][n]; for(int[] r:roads){ deg[r[0]]++; deg[r[1]]++; conn[r[0]][r[1]]=conn[r[1]][r[0]]=true; } int res=0; for(int i=0;i<n;i++) for(int j=i+1;j<n;j++) res=Math.max(res,deg[i]+deg[j]-(conn[i][j]?1:0)); return res; } }
