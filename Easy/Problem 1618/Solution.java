@@ -1,0 +1,1 @@
+public class Solution { public boolean patternMatching(String pattern,String value){ return false; } }
