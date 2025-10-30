@@ -1,0 +1,1 @@
+public class Solution { public boolean checkPalindromeFormation(String a, String b){ int n=a.length(); for(int i=0;i<n;i++){ if(a.charAt(i)!=b.charAt(n-1-i)) break; if(isPal(a,i+1,n-1)||isPal(b,n-i-1,n-1)) return true; } return false; } private boolean isPal(String s,int l,int r){ while(l<r) if(s.charAt(l++)!=s.charAt(r--)) return false; return true;} }
