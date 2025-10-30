@@ -1,0 +1,1 @@
+public class Solution { public List<String> generateParenthesis(int n){ return java.util.Collections.emptyList(); } }
