@@ -1,0 +1,1 @@
+public class Solution { public int largestUniqueNumber(int[] nums){ java.util.Map<Integer,Integer> m=new java.util.HashMap<>(); for(int n:nums) m.put(n,m.getOrDefault(n,0)+1); int res=-1; for(int k:m.keySet()) if(m.get(k)==1) res=Math.max(res,k); return res; } }
