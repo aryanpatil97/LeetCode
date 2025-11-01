@@ -1,0 +1,1 @@
+public class Solution { public char slowestKey(int[] releaseTimes, String keysPressed){ int max=0; char res='a'; for(int i=0;i<releaseTimes.length;i++){ int d=(i==0?releaseTimes[0]:releaseTimes[i]-releaseTimes[i-1]); if(d>max){ max=d; res=keysPressed.charAt(i);} } return res; } }
