@@ -1,0 +1,1 @@
+public class Solution { public long minCost(int[] nums){ return 0; } }
