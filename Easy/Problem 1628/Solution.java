@@ -1,0 +1,1 @@
+public class Solution { public int countSubarrays(int[] nums,int k){ return 0; } }
