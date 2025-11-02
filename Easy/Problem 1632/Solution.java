@@ -1,0 +1,2 @@
+import java.util.*;
+public class Solution { public int[] arrayRankTransform(int[] arr){ int[] b=arr.clone(); Arrays.sort(b); Map<Integer,Integer> m=new HashMap<>(); int r=1; for(int x:b) if(!m.containsKey(x)) m.put(x,r++); int[] res=new int[arr.length]; for(int i=0;i<arr.length;i++) res[i]=m.get(arr[i]); return res; } }
