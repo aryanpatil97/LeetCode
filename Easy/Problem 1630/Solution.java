@@ -1,0 +1,1 @@
+public class Solution { public int minOperations(int[] nums1,int[] nums2){ return 0; } }
