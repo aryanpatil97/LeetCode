@@ -1,0 +1,1 @@
+public class Solution { public int furthestBuilding(int[] heights, int bricks, int ladders){ return 0; } }
