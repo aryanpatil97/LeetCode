@@ -1,0 +1,1 @@
+public class Solution { public int maxLengthBetweenEqualCharacters(String s){ int[] idx=new int[26]; Arrays.fill(idx,-1); int res=-1; for(int i=0;i<s.length();i++){ int c=s.charAt(i)-'a'; if(idx[c]>=0) res=Math.max(res,i-idx[c]-1); else idx[c]=i; } return res; } }
