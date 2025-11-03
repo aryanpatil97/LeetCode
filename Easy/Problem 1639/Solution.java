@@ -1,0 +1,1 @@
+public class Solution { public int numberOfWays(String s){ return 0; } }
