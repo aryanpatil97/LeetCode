@@ -1,0 +1,2 @@
+import java.util.*;
+public class Solution { public int[] frequencySort(int[] nums){ Map<Integer,Integer> m=new HashMap<>(); for(int n:nums) m.put(n,m.getOrDefault(n,0)+1); Integer[] a = Arrays.stream(nums).boxed().toArray(Integer[]::new); Arrays.sort(a,(x,y)-> m.get(x).equals(m.get(y))? y-x : m.get(x)-m.get(y)); return Arrays.stream(a).mapToInt(Integer::intValue).toArray(); } }
