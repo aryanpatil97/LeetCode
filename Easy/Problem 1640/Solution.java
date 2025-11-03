@@ -1,0 +1,1 @@
+public class Solution { public boolean canFormArray(int[] arr, int[][] pieces){ int i=0; while(i<arr.length){ boolean found=false; for(int[] p:pieces){ if(p[0]==arr[i]){ found=true; for(int x:p){ if(arr[i++]!=x) return false; } break; } } if(!found) return false; } return true; } }
