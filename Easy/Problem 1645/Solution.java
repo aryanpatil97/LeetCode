@@ -1,0 +1,2 @@
+import java.util.*;
+public class Solution { public int[] findOriginalArray(int[] changed){ if(changed.length%2==1) return new int[0]; Map<Integer,Integer> cnt=new TreeMap<>(); for(int x:changed) cnt.put(x,cnt.getOrDefault(x,0)+1); int[] res=new int[changed.length/2]; int idx=0; for(int x:cnt.keySet()){ int c=cnt.get(x); if(c==0) continue; if(x==0){ if(c%2!=0) return new int[0]; for(int i=0;i<c/2;i++) res[idx++]=0; } else { int need=cnt.getOrDefault(2*x,0); if(need<c) return new int[0]; cnt.put(2*x,need-c); for(int i=0;i<c;i++) res[idx++]=x; } } return res; } }
