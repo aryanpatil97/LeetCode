@@ -1,0 +1,1 @@
+public class Solution { public int lcm(int[] nums){ long res=1; for(int n:nums) res=res/ gcd(res,n)*n; return (int)res; } private long gcd(long a,long b){ return b==0?a:gcd(b,a%b);} }
