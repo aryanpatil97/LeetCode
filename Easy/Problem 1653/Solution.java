@@ -1,0 +1,1 @@
+public class Solution { public int minimumDeletions(String s){ int n=s.length(); int r=0; for(int i=n-1;i>=0;i--){ if(s.charAt(i)=='a') r++; } int res=r; int l=0; for(int i=0;i<n;i++){ if(s.charAt(i)=='b') l++; else r--; res=Math.min(res,l+r); } return res; } }
