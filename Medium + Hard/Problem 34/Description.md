@@ -1,3 +1,12 @@
+# 34. Find First and Last Position of Element in Sorted Array
+
+Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value. If target is not found, return [-1, -1].
+
+Solving pattern and why:
+- Two binary searches to find the leftmost and rightmost occurrences. Each binary search is O(log n), overall O(log n).
+
+Approach:
+- Implement helper to find first index >= target and first index > target then derive range.
 34. Find First and Last Position of Element in Sorted Array
 Solved
 Medium
