@@ -1,3 +1,14 @@
+# 33. Search in Rotated Sorted Array
+
+There is an integer array nums sorted in ascending order (with distinct values), which is rotated at an unknown pivot.
+Given the array nums and an integer target, return the index of target if it is in nums, otherwise return -1.
+
+Solving pattern and why:
+- Modified binary search: determine which half is sorted and decide which side to continue searching.
+- This keeps O(log n) time and O(1) space.
+
+Approach:
+- Standard binary search loop; in each step check which side (left-mid or mid-right) is sorted by comparing endpoints, then check whether target falls in the sorted half.
 33. Search in Rotated Sorted Array
 Solved
 Medium
