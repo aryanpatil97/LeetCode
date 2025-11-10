@@ -1,3 +1,16 @@
+Problem 153 — Find Minimum in Rotated Sorted Array
+
+Short statement
+Given an array that was originally sorted in ascending order and then rotated, find the minimum element in O(log n) time.
+
+Approach
+- Binary search on the array: compare mid to rightmost element to decide which half contains the minimum.
+
+Complexity
+- Time: O(log n), Space: O(1).
+
+Edge cases
+- No rotation, single element.
 153. Find Minimum in Rotated Sorted Array
 Solved
 Medium
