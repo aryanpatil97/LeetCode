@@ -1,3 +1,17 @@
+Problem 120 — Triangle
+
+Short statement
+Given a triangle array, return the minimum path sum from top to bottom. Each step you may move to adjacent numbers on the row below.
+
+Approach
+- Dynamic programming (bottom-up). Use a 1D dp array initialized with the last row and process rows from bottom to top, updating dp[j] = triangle[row][j] + min(dp[j], dp[j+1]).
+
+Complexity
+- Time: O(n^2) where n is number of rows.
+- Space: O(n) extra (1D dp).
+
+Edge cases
+- Single-row triangle, negative values, varying triangle sizes.
 120. Triangle
 Solved
 Medium
