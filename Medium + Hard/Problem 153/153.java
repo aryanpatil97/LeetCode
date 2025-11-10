@@ -1,12 +1,17 @@
 // Solution for LeetCode 153. Find Minimum in Rotated Sorted Array
 class Solution {
     public int findMin(int[] nums) {
-        // Arrays.sort(nums);
-        // return nums[0];
-        int min =nums[0];
-        for(int i=0;i<nums.length;++i){
-            min =Math.min(min,nums[i]);
+        int left = 0, right = nums.length - 1;
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if (nums[mid] > nums[right]) {
+                // min is in right half
+                left = mid + 1;
+            } else {
+                // min is at mid or in left half
+                right = mid;
+            }
         }
-        return min;
+        return nums[left];
     }
 }
