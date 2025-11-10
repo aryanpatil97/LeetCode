@@ -1,3 +1,16 @@
+Problem 154 — Find Minimum in Rotated Sorted Array II
+
+Short statement
+Given a rotated sorted array that may contain duplicates, return the minimum element. Expect to handle duplicates efficiently.
+
+Approach
+- Binary search with duplicates: when nums[mid] equals nums[right], decrement right to shrink the search space; otherwise use comparisons like in Problem 153.
+
+Complexity
+- Average Time: O(log n), worst-case O(n) when many duplicates; Space: O(1).
+
+Edge cases
+- All elements equal, many duplicates.
 154. Find Minimum in Rotated Sorted Array II
 Solved
 Hard
