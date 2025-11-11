@@ -1,3 +1,16 @@
+Problem 167 — Two Sum II - Input Array Is Sorted
+
+Short statement
+Given a 1-indexed sorted array, return indices of the two numbers that add up to a target. Exactly one solution exists.
+
+Approach
+- Two-pointer from both ends: move left or right to shrink the sum to target.
+
+Complexity
+- Time: O(n), Space: O(1).
+
+Edge cases
+- Negative numbers, duplicates.
 167. Two Sum II - Input Array Is Sorted
 Solved
 Medium
