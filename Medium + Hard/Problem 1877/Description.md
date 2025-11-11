@@ -1,3 +1,16 @@
+Problem 1877 — Minimize Maximum Pair Sum in Array
+
+Short statement
+Given an array of even length, pair elements into n/2 pairs to minimize the maximum pair sum. Return that minimized maximum.
+
+Approach
+- Sort array and pair smallest with largest (two-pointer). The maximum among pairs is the answer.
+
+Complexity
+- Time: O(n log n) for sorting, Space: O(1).
+
+Edge cases
+- Duplicate values, even-length guarantee.
 1877. Minimize Maximum Pair Sum in Array
 Solved
 Medium
