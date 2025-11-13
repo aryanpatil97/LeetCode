@@ -1,27 +1,26 @@
 // Solution for LeetCode 52. N-Queens II
 
 class Solution {
+    private int count = 0;
+
     public int totalNQueens(int n) {
-       switch(n){ //this isnt a solution I am just playing with the given contraints n = 1-9
-        case 1:
-            return 1;
-        case 2:
-            return 0;
-        case 3:
-            return 0;
-        case 4:
-            return 2;
-        case 5:
-            return 10;
-        case 6:
-            return 4;
-        case 7:
-            return 40;
-        case 8:
-            return 92;
-        case 9:
-            return 352;
-       }
-       return 0;
+        // Use backtracking with bitmasks for columns and diagonals
+        backtrack(n, 0, 0, 0);
+        return count;
+    }
+
+    private void backtrack(int n, int cols, int diags, int antiDiags) {
+        if (cols == (1 << n) - 1) {
+            // all n queens placed
+            count++;
+            return;
+        }
+
+        int available = (~(cols | diags | antiDiags)) & ((1 << n) - 1);
+        while (available != 0) {
+            int pick = available & -available; // rightmost 1
+            available -= pick;
+            backtrack(n, cols | pick, (diags | pick) << 1, (antiDiags | pick) >> 1);
+        }
     }
 }
