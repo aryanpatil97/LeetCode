@@ -1,3 +1,16 @@
+Problem 611 — Valid Triangle Number
+
+Short statement
+Given an integer array, count the number of triplets that can form triangle side lengths.
+
+Approach
+- Sort array and use two pointers: fix the largest side and count pairs (i,j) with nums[i] + nums[j] > nums[k].
+
+Complexity
+- Time: O(n^2), Space: O(1).
+
+Edge cases
+- Zeros and insufficient length (<3).
 611. Valid Triangle Number
 Solved
 Medium
