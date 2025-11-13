@@ -1,3 +1,16 @@
+Problem 443 — String Compression
+
+Short statement
+Compress a char array in-place by replacing runs with character followed by run length digits (when >1), return new length.
+
+Approach
+- Two-pointer scan, write output in-place using an index. Convert counts to chars when >1.
+
+Complexity
+- Time: O(n), Space: O(1).
+
+Edge cases
+- Runs with length >= 10 where count requires multiple digits.
 443. String Compression
 Solved
 Medium
