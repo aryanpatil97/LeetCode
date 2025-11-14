@@ -1,3 +1,16 @@
+Problem 852 — Peak Index in a Mountain Array
+
+Short statement
+Given a mountain array (strictly increasing then strictly decreasing), return the index of the peak.
+
+Approach
+- Binary search comparing mid with mid+1 to find the increasing/decreasing slope; narrow the search until left==right.
+
+Complexity
+- Time: O(log n), Space: O(1).
+
+Edge cases
+- Small arrays (n>=3 per constraints).
 852. Peak Index in a Mountain Array
 Solved
 Medium
