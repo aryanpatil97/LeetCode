@@ -1,0 +1,9 @@
+# Compiled Java class files
+*.class
+
+# Output directory for compiled solutions
+/out/
+
+# Editor metadata
+.vscode/
+.idea/
