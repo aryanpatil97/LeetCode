@@ -9,7 +9,6 @@ Repository layout and conventions
 
 Why this structure
 - Having a single `Solution.java` per problem lets you quickly compile and run solutions by targetting those files specifically.
-
 Quick commands
 - Compile all `Solution.java` files into the `out/` folder (script provided):
 
